@@ -32,6 +32,7 @@ public class DeathMaps extends JavaPlugin {
                 Location loc = player.getLocation();
                 BlockPosition pos = new BlockPosition(loc.getBlockX(), loc.getBlockY(), loc.getBlockZ());
                 ItemStack nmsMap = ItemWorldMap.createFilledMapView(((CraftWorld) loc.getWorld()).getHandle(), pos.getX(), pos.getZ(), MapView.Scale.CLOSEST.getValue(), true, true);
+                ItemWorldMap.applySepiaFilter(((CraftWorld) loc.getWorld()).getHandle(), nmsMap);
                 WorldMap.decorateMap(nmsMap, pos, "Death", MapIcon.Type.TARGET_X);
                 NBTTagCompound displayTag = nmsMap.getOrCreateSubTag("display");
                 NBTTagList lore = new NBTTagList();
