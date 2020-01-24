@@ -37,6 +37,7 @@ public class DeathMaps extends JavaPlugin {
                 mapMeta.setDisplayName(player.getDisplayName() + ChatColor.RED + "'s Death Map");
                 ArrayList<String> lore = new ArrayList<>();
                 lore.add(ChatColor.GRAY + "World: " + player.getWorld().getName());
+                lore.add(ChatColor.GRAY + "X: " + loc.getBlockX() + " Y: " + loc.getBlockY() + " Z: " + loc.getBlockZ());
                 mapMeta.setLore(lore);
                 bukkitMap.setItemMeta(mapMeta);
                 new BukkitRunnable() {
