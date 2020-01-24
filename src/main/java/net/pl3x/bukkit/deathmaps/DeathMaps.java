@@ -7,6 +7,7 @@ import net.minecraft.server.v1_15_R1.MapIcon;
 import net.minecraft.server.v1_15_R1.WorldMap;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.craftbukkit.v1_15_R1.CraftWorld;
 import org.bukkit.craftbukkit.v1_15_R1.inventory.CraftItemStack;
 import org.bukkit.entity.Player;
@@ -45,7 +46,11 @@ public class DeathMaps extends JavaPlugin {
                 bukkitMap.setItemMeta(mapMeta);
                 new BukkitRunnable() {
                     public void run() {
-                        player.getInventory().addItem(bukkitMap);
+                        if (player.getInventory().getItemInOffHand().getType() == Material.AIR) {
+                            player.getInventory().setItemInOffHand(bukkitMap);
+                        } else {
+                            player.getInventory().addItem(bukkitMap);
+                        }
                     }
                 }.runTaskLater(DeathMaps.this, 1L);
             }
