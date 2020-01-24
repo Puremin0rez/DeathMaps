@@ -34,7 +34,7 @@ public class DeathMaps extends JavaPlugin {
                 WorldMap.decorateMap(nmsMap, pos, "Death", MapIcon.Type.TARGET_X);
                 org.bukkit.inventory.ItemStack bukkitMap = CraftItemStack.asCraftMirror(nmsMap);
                 ItemMeta mapMeta = bukkitMap.getItemMeta();
-                mapMeta.setDisplayName(ChatColor.RED + "Death Map");
+                mapMeta.setDisplayName(player.getDisplayName() + ChatColor.RED + "'s Death Map");
                 ArrayList<String> lore = new ArrayList<>();
                 lore.add(ChatColor.GRAY + "World: " + player.getWorld().getName());
                 mapMeta.setLore(lore);
