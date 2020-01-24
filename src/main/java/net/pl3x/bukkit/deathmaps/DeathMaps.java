@@ -27,7 +27,7 @@ import java.util.Date;
 public class DeathMaps extends JavaPlugin {
     public void onEnable() {
         getServer().getPluginManager().registerEvents(new Listener() {
-            @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
+            @EventHandler(priority = EventPriority.LOWEST, ignoreCancelled = true)
             public void onDeath(PlayerDeathEvent event) {
                 if (event.getDrops().isEmpty()) return;
                 Player player = event.getEntity();
