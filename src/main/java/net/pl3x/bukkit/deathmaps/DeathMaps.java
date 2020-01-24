@@ -34,7 +34,7 @@ public class DeathMaps extends JavaPlugin {
                 BlockPosition pos = new BlockPosition(loc.getBlockX(), loc.getBlockY(), loc.getBlockZ());
                 ItemStack nmsMap = ItemWorldMap.createFilledMapView(((CraftWorld) loc.getWorld()).getHandle(), pos.getX(), pos.getZ(), MapView.Scale.CLOSEST.getValue(), true, true);
                 ItemWorldMap.applySepiaFilter(((CraftWorld) loc.getWorld()).getHandle(), nmsMap);
-                WorldMap.decorateMap(nmsMap, pos, "Death", MapIcon.Type.TARGET_X);
+                WorldMap.decorateMap(nmsMap, pos, "Death", MapIcon.Type.RED_X);
                 org.bukkit.inventory.ItemStack bukkitMap = CraftItemStack.asCraftMirror(nmsMap);
                 ItemMeta mapMeta = bukkitMap.getItemMeta();
                 mapMeta.setDisplayName(player.getDisplayName() + ChatColor.RED + "'s Death Map");
