@@ -29,6 +29,7 @@ public class DeathMaps extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new Listener() {
             @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
             public void onDeath(PlayerDeathEvent event) {
+                if (event.getDrops().isEmpty()) return;
                 Player player = event.getEntity();
                 Location loc = player.getLocation();
                 BlockPosition pos = new BlockPosition(loc.getBlockX(), loc.getBlockY(), loc.getBlockZ());
