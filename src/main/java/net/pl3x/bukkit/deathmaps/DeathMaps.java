@@ -19,7 +19,9 @@ import org.bukkit.map.MapView;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class DeathMaps extends JavaPlugin {
     public void onEnable() {
@@ -38,6 +40,7 @@ public class DeathMaps extends JavaPlugin {
                 ArrayList<String> lore = new ArrayList<>();
                 lore.add(ChatColor.GRAY + "World: " + player.getWorld().getName());
                 lore.add(ChatColor.GRAY + "X: " + loc.getBlockX() + " Y: " + loc.getBlockY() + " Z: " + loc.getBlockZ());
+                lore.add(ChatColor.GOLD + new SimpleDateFormat("M/d/yy h:mm aa").format(new Date()));
                 mapMeta.setLore(lore);
                 bukkitMap.setItemMeta(mapMeta);
                 new BukkitRunnable() {
