@@ -25,10 +25,10 @@ This project is a direct drop in replacement for the original. You can upgrade w
 
 ## How do I obtain it?
 
+__Note: You must provide the Minecraft Server jar (Craftbukkit / Spigot / Paper) into the project root directory as "nms.jar"__
+
 You can compile it yourself by using Maven and simply running the following command in the project folder:
 (The jar file will be located in /targets/)
-
-__Note: You must provide the Minecraft Server jar (Craftbukkit / Spigot / Paper) into the project root directory as "nms.jar"__
 
 ```
 mvn
