@@ -5,28 +5,23 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.pl3x.bukkit.deathmaps</groupId>
     <artifactId>DeathMaps</artifactId>
-    <version>1.0</version>
+    <version>1.16</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
         <dependency>
-            <groupId>net.pl3x.purpur</groupId>
-            <artifactId>purpur</artifactId>
-            <version>1.15.2-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
+            <groupId>net.minecraft.server</groupId>
+            <artifactId>nms</artifactId>
+            <version>${project.version}</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/nms.jar</systemPath>
         </dependency>
     </dependencies>
-    <repositories>
-        <repository>
-            <id>pl3x</id>
-            <url>https://repo.pl3x.net/</url>
-        </repository>
-    </repositories>
     <build>
         <finalName>${project.artifactId}</finalName>
-        <defaultGoal>clean package install</defaultGoal>
+        <defaultGoal>clean package</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

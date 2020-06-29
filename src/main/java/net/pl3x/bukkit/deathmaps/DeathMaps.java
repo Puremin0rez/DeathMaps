@@ -1,15 +1,15 @@
 package net.pl3x.bukkit.deathmaps;
 
-import net.minecraft.server.v1_15_R1.BlockPosition;
-import net.minecraft.server.v1_15_R1.ItemStack;
-import net.minecraft.server.v1_15_R1.ItemWorldMap;
-import net.minecraft.server.v1_15_R1.MapIcon;
-import net.minecraft.server.v1_15_R1.WorldMap;
+import net.minecraft.server.v1_16_R1.BlockPosition;
+import net.minecraft.server.v1_16_R1.ItemStack;
+import net.minecraft.server.v1_16_R1.ItemWorldMap;
+import net.minecraft.server.v1_16_R1.MapIcon;
+import net.minecraft.server.v1_16_R1.WorldMap;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_15_R1.CraftWorld;
-import org.bukkit.craftbukkit.v1_15_R1.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_16_R1.CraftWorld;
+import org.bukkit.craftbukkit.v1_16_R1.inventory.CraftItemStack;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
