@@ -3,4 +3,4 @@ main: "${project.groupId}.${project.artifactId}"
 version: "${project.version}"
 description: "Generates a map showing the players last death location!"
 authors: ["BillyGalbreath", "Puremin0rez"]
-api-version: "${project.version}"
+api-version: "1.16"
