@@ -1,6 +1,6 @@
-name: "${project.artifactId}"
-main: "${project.groupId}.${project.artifactId}"
-version: "${project.version}"
+name: "${name}"
+main: "${group}.${name}"
+version: "${version}"
 description: "Generates a map showing the players last death location!"
 authors: ["BillyGalbreath", "Puremin0rez"]
 api-version: "1.16"
