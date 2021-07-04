@@ -1,6 +1,6 @@
 # DeathMaps
 
-**Compatible with Minecraft 1.16.4**
+**Compatible with Minecraft 1.17**
 
 This is a continuation / maintained version of the original plugin created by BillyGalbreth from Pl3xcraft.
 
@@ -25,26 +25,29 @@ This project is a direct drop in replacement for the original. You can upgrade w
 
 ## How do I obtain it?
 
-__Note: You must provide the Minecraft Server jar (Craftbukkit / Spigot / Paper) into the project root directory as "nms.jar"__
+You can download stable releases via Github Releases, [located here.](https://github.com/Puremin0rez/DeathMaps/releases)
 
-You can compile it yourself by using Maven and simply running the following command in the project folder:
-(The jar file will be located in /targets/)
+You can compile it by performing the following steps:
 
+Download [BuildTools](https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar) to any directory and run the following command:
 ```
-mvn
+java -jar BuildTools.jar --rev 1.17
+```
+(Note: This **WILL** take some time to complete)
+
+Finish the process by running the following command in the project directory:
+```
+./gradlew clean build
 ```
 
-You can also download the latest pre compiled binary over on the releases section of Github, located here:
-
-https://github.com/Puremin0rez/DeathMaps/releases
+(The jar file will be located in `/build/libs/`)
 
 ## Can I use your code?
 
-I recommend asking BillyGalbreth directly - as there was no license packaged with the original project.
-
-You can use my specific bits of code however you'd like. MIT.
+I recommend asking [BillyGalbreth](https://github.com/BillyGalbreath) directly - as there was no license packaged with the original project.
 
 ## Acknowledgements
 
-* Incredible thanks to Billy for always helping out the community and coming up with great ideas. My survival inspiration <3
+* Incredible thanks to [Billy](https://github.com/BillyGalbreath) for always helping out the community and coming up with great ideas. My survival inspiration <3
+* [Contributors](https://github.com/Puremin0rez/DeathMaps/graphs/contributors) for helping improve the project.
 * You, for reading this and checking out the project.
