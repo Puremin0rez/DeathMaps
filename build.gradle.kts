@@ -3,11 +3,11 @@ plugins {
 }
 
 group = "net.pl3x.bukkit.deathmaps"
-version = "1.16.4"
+version = "1.17"
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(8))
+        languageVersion.set(JavaLanguageVersion.of(16))
     }
 }
 
@@ -17,7 +17,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly(group = "org.spigotmc", name = "spigot", version = "1.16.4-R0.1-SNAPSHOT")
+    compileOnly(group = "org.spigotmc", name = "spigot", version = "1.17-R0.1-SNAPSHOT")
 }
 
 defaultTasks("clean", "build")

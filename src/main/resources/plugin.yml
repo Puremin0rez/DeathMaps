@@ -3,4 +3,4 @@ main: "${group}.${name}"
 version: "${version}"
 description: "Generates a map showing the players last death location!"
 authors: ["BillyGalbreath", "Puremin0rez"]
-api-version: "1.16"
+api-version: "1.17"

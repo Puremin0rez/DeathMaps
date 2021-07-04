@@ -1,15 +1,15 @@
 package net.pl3x.bukkit.deathmaps;
 
-import net.minecraft.server.v1_16_R3.BlockPosition;
-import net.minecraft.server.v1_16_R3.ItemStack;
-import net.minecraft.server.v1_16_R3.ItemWorldMap;
-import net.minecraft.server.v1_16_R3.MapIcon;
-import net.minecraft.server.v1_16_R3.WorldMap;
+import net.minecraft.core.BlockPosition;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ItemWorldMap;
+import net.minecraft.world.level.saveddata.maps.MapIcon;
+import net.minecraft.world.level.saveddata.maps.WorldMap;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_16_R3.CraftWorld;
-import org.bukkit.craftbukkit.v1_16_R3.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_17_R1.CraftWorld;
+import org.bukkit.craftbukkit.v1_17_R1.inventory.CraftItemStack;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -35,7 +35,7 @@ public class DeathMaps extends JavaPlugin {
                 BlockPosition pos = new BlockPosition(loc.getBlockX(), loc.getBlockY(), loc.getBlockZ());
                 ItemStack nmsMap = ItemWorldMap.createFilledMapView(((CraftWorld) loc.getWorld()).getHandle(), pos.getX(), pos.getZ(), MapView.Scale.CLOSEST.getValue(), true, true);
                 ItemWorldMap.applySepiaFilter(((CraftWorld) loc.getWorld()).getHandle(), nmsMap);
-                WorldMap.decorateMap(nmsMap, pos, "Death", MapIcon.Type.RED_X);
+                WorldMap.decorateMap(nmsMap, pos, "Death", MapIcon.Type.A);
                 org.bukkit.inventory.ItemStack bukkitMap = CraftItemStack.asCraftMirror(nmsMap);
                 ItemMeta mapMeta = bukkitMap.getItemMeta();
                 mapMeta.setDisplayName(player.getDisplayName() + ChatColor.RED + "'s Death Map");
