@@ -1,6 +1,6 @@
 # DeathMaps
 
-**Compatible with Minecraft 1.17**
+**Compatible with Minecraft 1.18**
 
 This is a continuation / maintained version of the original plugin created by BillyGalbreth from Pl3xcraft.
 
@@ -27,15 +27,10 @@ This project is a direct drop in replacement for the original. You can upgrade w
 
 You can download stable releases via Github Releases, [located here.](https://github.com/Puremin0rez/DeathMaps/releases)
 
-You can compile it by performing the following steps:
+You can download development builds via Github Actions, [located here.](https://github.com/Puremin0rez/DeathMaps/actions?query=branch%3Amaster+is%3Asuccess) (Github Account Required)
 
-Download [BuildTools](https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar) to any directory and run the following command:
-```
-java -jar BuildTools.jar --rev 1.17
-```
-(Note: This **WILL** take some time to complete)
+You can compile it by running the following command in the project directory:
 
-Finish the process by running the following command in the project directory:
 ```
 ./gradlew clean build
 ```
