@@ -1,6 +1,6 @@
 # DeathMaps
 
-**Compatible with Minecraft 1.18**
+**Compatible with Minecraft 1.18.2**
 
 This is a continuation / maintained version of the original plugin created by BillyGalbreth from Pl3xcraft.
 
