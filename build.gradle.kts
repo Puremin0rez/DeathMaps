@@ -1,10 +1,10 @@
 plugins {
     id("java")
-    id("io.papermc.paperweight.userdev") version "1.3.1"
+    id("io.papermc.paperweight.userdev") version "1.3.5"
 }
 
 group = "net.pl3x.bukkit.deathmaps"
-version = "1.18"
+version = "1.18.2"
 
 java {
     toolchain {
@@ -17,7 +17,7 @@ repositories {
 }
 
 dependencies {
-    paperDevBundle("1.18-R0.1-SNAPSHOT")
+    paperDevBundle("1.18.2-R0.1-SNAPSHOT")
 }
 
 defaultTasks("clean", "build")
