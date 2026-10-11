@@ -1,6 +1,6 @@
 # DeathMaps
 
-**Compatible with Minecraft 1.19**
+**Compatible with Minecraft 26.3 (Paper)**
 
 This is a continuation / maintained version of the original plugin created by BillyGalbreth from Pl3xcraft.
 
@@ -16,10 +16,12 @@ This is a list of everything that has been altered from the original from a user
 * The coordinates of the death marker now displays in the tooltip of the map
 * The date/time of death now displays in the tooltip of the map
 * The coloring for the tooltip has been improved and formatted
-* The map will now go into your off hand by default, and fallback to your inventory if your offhand wasn't empty (keep inv / soulbound)
-* The death maker is now a red cross instead of a white cross
-* The death map will only be created if you actually dropped any items when you died
+* The map will now go into your off hand by default, and fallback to your main hand, then your inventory if neither hand was empty (keep inv / soulbound)
+* The death marker is now a red cross instead of a white cross by default
+* The death map will only be created if you actually dropped any items when you died by default
 * Improved compatibility with plugins that interfere with dead players items - such as death chest plugins
+* A config file to customize the map, with [MiniMessage](https://docs.papermc.io/adventure/minimessage/format/) support
+* The `deathmaps.receive` permission (given to everyone by default) controls who receives a death map
 
 This project is a direct drop in replacement for the original. You can upgrade without any loss or worries.
 
