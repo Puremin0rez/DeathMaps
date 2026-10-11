@@ -25,7 +25,7 @@ class DeathListener(private val plugin: Plugin) : Listener {
     if (event.keepInventory && event.drops.isEmpty()) return
     val player = event.entity
     val map = DeathMapFactory.create(player, player.location)
-    BiomePreview.render(map)
+    BiomePreview.render(plugin, map)
 
     plugin.server.scheduler.runTaskLater(plugin, Runnable { giveMap(player, map) }, 1L)
   }
