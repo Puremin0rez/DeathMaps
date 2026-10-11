@@ -4,3 +4,5 @@ version: "${version}"
 description: "Generates a map showing the players last death location!"
 authors: ["BillyGalbreath", "Puremin0rez"]
 api-version: "26.3"
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}
