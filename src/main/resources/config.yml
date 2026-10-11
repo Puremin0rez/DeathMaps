@@ -1,0 +1,29 @@
+# Only give a death map when the player dropped items
+requireDrops: true
+# Names of worlds where players never get a death map
+disabledWorlds: []
+# The preferred hand for the map, off_hand or main_hand
+hand: off_hand
+
+# The icon marking where the player died, any name listed here: https://jd.papermc.io/paper/org/bukkit/map/MapCursor.Type.html
+markerType: red_x
+# Draw land and water outlines, like an explorer map
+biomePreview: true
+
+# Text options use MiniMessage formatting: https://docs.papermc.io/adventure/minimessage/format/
+
+# The name of the map
+#   <player>: the player's display name, with its formatting
+#   <name>: the player's username
+mapName: <player><red>'s Death Map
+# Each entry is a line in the map's tooltip, an empty list shows none
+#   <player> and <name>: the same as mapName
+#   <world>: the world the player died in
+#   <x>, <y> and <z>: where the player died
+#   <date>: when the player died, formatted with dateFormat
+mapLore:
+- '<yellow>World: <white><underlined><world>'
+- '<dark_aqua>X: <white><x><dark_aqua> Y: <white><y><dark_aqua> Z: <white><z>'
+- <gold><date>
+# See https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/format/DateTimeFormatter.html
+dateFormat: M/d/yy h:mm a

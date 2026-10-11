@@ -6,3 +6,7 @@ authors: ["BillyGalbreath", "Puremin0rez"]
 api-version: "26.3"
 libraries:
   - org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}
+permissions:
+  deathmaps.receive:
+    description: Controls a players ability to receive a death map when they die.
+    default: true
